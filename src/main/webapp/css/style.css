@@ -1,0 +1,173 @@
+@media (max-width: 768px) {
+  html, body {
+    font-size: 50%;
+  }
+}
+body {
+  display: -webkit-box;
+
+  background: #2196F3;
+  margin: 0;
+  height:100%;
+  width:100%;
+
+}
+
+
+.cards{
+    position: fixed;
+    bottom: 0;
+    border:0.1px solid black;
+    height:15%;
+    width:70%;
+}
+.chat-log {
+    border:1px solid black;
+    height:30%;
+
+}
+
+.img-wrap {
+  z-index: 10;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: moccasin;
+  position: relative;
+  height: 100%;
+  width: 11.25rem;
+  margin-right: -0.7rem;
+}
+.middle{
+    width:65%
+}
+.players {
+    overflow: hidden;
+    height: 70%;
+     border:0.1px solid black;
+}
+
+.playerU{
+    height: 25%;
+     border:0.1px solid black;
+}
+
+.player1{
+    height: 25%;
+     border:0.1px solid black;
+}
+
+.player2{
+    height: 25%;
+     border:0.1px solid black;
+}
+
+.player3{
+    height: 25%;
+     border:0.1px solid black;
+}
+
+.settlers{
+    top: 5%;
+    height: 100%;
+    width:65%;
+    position: absolute;
+    overflow: scroll;
+
+}
+.tile {
+  z-index: 20;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.left-panel {
+    width: 20%;
+    height:100%;
+    border:1px solid black;
+
+}
+.right-panel{
+    width:15%;
+    height:100%;
+    position: fixed;
+    border:0.1px solid black;
+
+}
+.row {
+  height: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -6%;
+}
+
+.hills,
+.desert,
+.forest,
+.mountains,
+.ocean,
+.pasture,
+.fields {
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: 51% 46%;
+}
+
+.hills {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-brick.png");
+}
+
+.desert {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-desert.png");
+}
+
+.forest {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-forest.png");
+}
+
+.mountains {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-mountain.png");
+}
+
+.ocean {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-ocean.png");
+}
+
+.pasture {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-pasture.png");
+}
+
+.fields {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/catan-wheat.png");
+}
+
+.disc {
+  background-color: moccasin;
+  border: 3px solid #222;
+  border-radius: 2em;
+  font-size: 175%;
+  left: 50%;
+  line-height: 1.5em;
+  margin-top: -0.8em;
+  margin-left: -0.8em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 1.5em;
+  z-index: 30;
+}
+
+.red {
+  color: red;
+}
